@@ -61,9 +61,9 @@ L02   = Lr                                      # attenuation length of wave 2
 # Scale timestep with forcing
 dtf    = 1.E-4                                  # T0 timestep scaling
 trspin = 4/5                                    # time ratio spin-up/run
-nTmax  = 25                                   # maximum T0s to simulate
+nTmax  = 2500                                   # maximum T0s to simulate
 nTspin = nTmax*trspin                           # save hot start up to spin-up
-nT     = 5                                    # number of T0s to simulate
+nT     = 500                                    # number of T0s to simulate
 T01    = 1/simF1 if simF1 else 0                # characteristic time wave 1
 T02    = Lr**2/simF2 if simF2 else 0            # characteristic time wave 2
 T0     = min(T01,T02) if T01*T02\

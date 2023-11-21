@@ -24,7 +24,7 @@ Re  = np.linspace(minRe,maxRe,nRe)              # wave Reynolds
 # BEGIN STREAM EDITOR
 wdir  = ''
 fdiag = 0
-indRe = 10
+indRe = 0
 # END STREAM EDITOR, BEGIN MODEL CONFIGURATION
 
 # Wave parameters of each forced components
@@ -49,9 +49,9 @@ Fcond = None                                    # forcing condition above Uc
 # Adaptative timestep with the forcing
 dtf    = 1.E-4                                  # T0 timestep scaling
 trspin = 4/5                                    # time ratio spin-up/run
-nTmax  = 25                                   # maximum T0s to simulate
+nTmax  = 2500                                   # maximum T0s to simulate
 nTspin = nTmax*trspin                           # save hot start up to spin-up
-nT     = 5                                    # number of T0s to simulate
+nT     = 500                                    # number of T0s to simulate
 T0     = k[0]**2/simRe if simRe else 0          # characteristic time
 dt     = dtf*T0                                 # timestep/reversal condition
 
