@@ -88,7 +88,7 @@ fields    = {'MeanFlow':meanflow,
              'PtbPosAccel':ptbpaccel,
              'PtbNegAccel':ptbnaccel,
              'DiffAccel':diffaccel,
-             'WbarAccel':wbaraccel}             # fields to diagnose
+             'WbarAccel':wbaraccel}             # output fields
 
 # Grid, wave parameters, initial conditions and diagnostics
 grid  = gridInit(nz,H,dt,itr)                   # grid options
