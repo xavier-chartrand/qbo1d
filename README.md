@@ -5,5 +5,3 @@ and a numerical criterion tampering wave momentum deposition above critical leve
 
 Two script examples with different forcing configurations are given: one with monochromatic wave forcing "QBO1Dstart_1wave.py", and the other with a wave forcing
 composed of two pairs of waves "QBO1Dstart_2waves.py".
-
-I invite future users to modify the model at their will !
